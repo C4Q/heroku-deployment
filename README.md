@@ -2,9 +2,9 @@
 heroku is also simple deployment software
 
 - [heroku node.js docs](https://devcenter.heroku.com/categories/nodejs)
+- [Heroku Sequelize Docs](http://docs.sequelizejs.com/en/1.7.0/articles/heroku/)
 
 ### setup
-- [Heroku Sequelize Docs](http://docs.sequelizejs.com/en/1.7.0/articles/heroku/)
 - download the heroku [command line interface](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
 - once installed, create a heroku account on [heroku.com](https://www.heroku.com/home)
 - after you've created an account, login on your command line by running `heroku login`
