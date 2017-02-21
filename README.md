@@ -27,6 +27,13 @@ In your `server.js` make the following changes:
 app.listen(process.env.PORT || '9999', () => console.log('Listening on port 9999'));
 ```
 
+### heroku create 
+To create your app on heroku, run the following command (from within your main project repo):
+- `heroku create`
+
+if you now go to heroku.com and look at your projects, you should see a newly created project with a weird somewhat random name (you can chane this name on project settings on the heroku website)
+
+
 ### database setup
 - Similarly, change your Sequelize database connection to the following:
 ```js
@@ -35,6 +42,5 @@ let sequelizeConnection = process.env.NODE_ENV === 'production' ? new Sequelize(
 - Then, from the command line run `heroku addons:add heroku-postgresql:hobby-dev`. This will create a new database instance for your deployed app.
 
 ### deployment
-- to deploy your app, `cd` into your app's directory and run `heroku create`
 - to deploy new code, run `git push heroku master`
 - then open the URL that heroku gives you in your browser (it can sometimes take up to 30 minutes to go live)
